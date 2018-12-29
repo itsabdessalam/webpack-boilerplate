@@ -1,62 +1,79 @@
 {
-  "name": "webpack-boilerplate",
-  "version": "1.0.0",
-  "description": "A webpack boilerplate",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server --open --config webpack.dev.js --hot --inline",
-    "prod": "webpack --config webpack.prod.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Abdessalam98/webpack-boilerplate.git"
-  },
-  "keywords": [
-    "webpack",
-    "es6",
-    "boilerplate"
-  ],
-  "author": "Abdessalam BENHARIRA",
-  "license": "ISC",
-  "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.2.3",
-    "babel-loader": "^8.0.4",
-    "clean-webpack-plugin": "^1.0.0",
-    "css-loader": "^2.0.2",
-    "eslint": "^5.11.1",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-config-prettier": "^3.3.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jsx-a11y": "^6.1.2",
-    "eslint-plugin-prettier": "^3.0.1",
-    "eslint-plugin-react": "^7.12.0",
-    "file-loader": "^3.0.1",
-    "html-loader": "^0.5.5",
-    "html-webpack-plugin": "^3.2.0",
-    "mini-css-extract-plugin": "^0.5.0",
-    "node-sass": "^4.11.0",
-    "optimize-css-assets-webpack-plugin": "^5.0.1",
-    "prettier": "^1.15.3",
-    "prettier-eslint": "^8.8.2",
-    "sass-loader": "^7.1.0",
-    "style-loader": "^0.23.1",
-    "stylelint": "^9.9.0",
-    "stylelint-config-standard": "^18.2.0",
-    "stylelint-processor-html": "^1.0.0",
-    "stylelint-webpack-plugin": "^0.10.5",
-    "uglifyjs-webpack-plugin": "^2.1.0",
-    "url-loader": "^1.1.2",
-    "webpack": "^4.28.2",
-    "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.14",
-    "webpack-merge": "^4.1.5"
-  },
-  "bugs": {
-    "url": "https://github.com/Abdessalam98/webpack-boilerplate/issues"
-  },
-  "homepage": "https://github.com/Abdessalam98/webpack-boilerplate#readme",
-  "dependencies": {}
+	"name": "webpack-boilerplate",
+	"version": "1.0.0",
+	"description": "A webpack boilerplate",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "webpack-dev-server --open --config webpack.dev.js --hot --inline",
+		"prod": "webpack --config webpack.prod.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Abdessalam98/webpack-boilerplate.git"
+	},
+	"keywords": [
+		"webpack",
+		"es6",
+		"boilerplate"
+	],
+	"author": "Abdessalam BENHARIRA",
+	"license": "ISC",
+	"devDependencies": {
+		"@babel/core": "^7.2.2",
+		"@babel/preset-env": "^7.2.3",
+		"babel-loader": "^8.0.4",
+		"clean-webpack-plugin": "^1.0.0",
+		"css-loader": "^2.0.2",
+		"eslint": "^5.11.1",
+		"eslint-config-airbnb": "^17.1.0",
+		"eslint-config-airbnb-base": "^13.1.0",
+		"eslint-config-prettier": "^3.3.0",
+		"eslint-plugin-import": "^2.14.0",
+		"eslint-plugin-jsx-a11y": "^6.1.2",
+		"eslint-plugin-prettier": "^3.0.1",
+		"eslint-plugin-react": "^7.12.0",
+		"file-loader": "^3.0.1",
+		"html-loader": "^0.5.5",
+		"html-webpack-plugin": "^3.2.0",
+		"husky": "^1.3.1",
+		"lint-staged": "^8.1.0",
+		"mini-css-extract-plugin": "^0.5.0",
+		"node-sass": "^4.11.0",
+		"optimize-css-assets-webpack-plugin": "^5.0.1",
+		"prettier": "^1.15.3",
+		"prettier-eslint": "^8.8.2",
+		"pretty-quick": "^1.8.0",
+		"sass-loader": "^7.1.0",
+		"style-loader": "^0.23.1",
+		"stylelint": "^9.9.0",
+		"stylelint-config-standard": "^18.2.0",
+		"stylelint-processor-html": "^1.0.0",
+		"stylelint-webpack-plugin": "^0.10.5",
+		"uglifyjs-webpack-plugin": "^2.1.0",
+		"url-loader": "^1.1.2",
+		"webpack": "^4.28.2",
+		"webpack-cli": "^3.1.2",
+		"webpack-dev-server": "^3.1.14",
+		"webpack-merge": "^4.1.5"
+	},
+	"bugs": {
+		"url": "https://github.com/Abdessalam98/webpack-boilerplate/issues"
+	},
+	"homepage": "https://github.com/Abdessalam98/webpack-boilerplate#readme",
+	"dependencies": {},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"**/*.{js,jsx}": [
+			"pretty-quick --staged",
+			"eslint"
+		],
+		"**/*.{sass,scss,css}": [
+			"stylelint"
+		]
+	}
 }

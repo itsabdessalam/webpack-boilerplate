@@ -1,0 +1,8 @@
+{
+	// Prettier Config Vscode
+	"prettier.tabWidth": 4,
+	"prettier.useTabs": true,
+	"prettier.singleQuote": false,
+	"prettier.printWidth": 80,
+	"prettier.bracketSpacing": false
+}
