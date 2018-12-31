@@ -12,6 +12,7 @@ module.exports = merge(common, {
 		hot: true,
 		watchContentBase: true,
 		inline: true,
+		stats: "minimal",
 		public: "http://localhost:9000"
 	}
 });
