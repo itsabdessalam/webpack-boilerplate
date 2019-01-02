@@ -40,6 +40,7 @@ npm run prod
 ```
 
 3.  **Open browser and start editing files!**
+
 ⋅⋅⋅Site is running at http://localhost:9000
 
 ## 🧐 What's inside?
