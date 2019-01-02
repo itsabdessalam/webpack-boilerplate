@@ -1,5 +1,7 @@
 ![webpack-boilerplate](./ressources/webpack-boilerplate.png)
+
 # Webpack Boilerplate
+
 > This starter project aims to be more productive when starting a webpack project.
 
 ## Requirements
@@ -10,7 +12,6 @@ This starter project should be working as expected with the following minimal ve
 | ---------- | :-------: |
 | Node       | >= v8.0.0 |
 | NPM        | >= v5.0.0 |
-
 
 ## 🚀 Quick start
 
@@ -23,10 +24,19 @@ git clone https://github.com/Abdessalam98/webpack-boilerplate my-webpack-starter
 # install project dependencies
 cd my-webpack-starter && npm install
 ```
+
 2.  **Start Developing**
+
+**Dev Version**
 
 ```bash
 npm run dev
+```
+
+**Prod Server**
+
+```bash
+npm run prod
 ```
 
 3.  **Open browser and start editing files!**
@@ -38,11 +48,11 @@ npm run dev
 ├── node_modules        # This is the directory of the modules (npm packages) for your project
 ├── src                 # This is the directory of entry point files related to the front-end of your site
 |   ├── index.js        # This is the entry point file for Webpack
-|   └── assets         
-|      ├── fonts
-|      ├── images
-|      ├── javascripts
-|      └── stylesheets
+|   └── assets
+|        ├── fonts
+|        ├── images
+|        ├── javascripts
+|        └── stylesheets
 ├── .gitignore          # This file tells git which files it should not track
 ├── .prettierrc.json    # This is the configuration file for Prettier
 ├── .eslintrc.json      # This is the configuration file for ESLint
@@ -56,15 +66,25 @@ npm run dev
 └── webpack.prod.js
 ```
 
+## ✨ Features
 
-## Git pre-commit
+-   Babel
+-   Linting with ESLint and Stylelint
+-   Code formatting with Prettier
+-   Precommit with husky and lint-staged
 
-This starter project is setuped with git pre-commit and uses Husky and lint-staged. It runs linters before committing and prevents errors to go in your repository.
+## 💩 When trying to commit bad code
 
-**Example:**
+It runs linters before committing and prevents errors to go in your repository.
 
-![preview-precommit](./ressources/preview-precommit.png)
+**Example with errors**
 
+![preview-precommit-errors](./ressources/preview-precommit.png)
+
+**Example after fixing errors**
+
+![preview-precommit-errors-resolved](./ressources/preview-precommit.png)
 
 ## Author
+
 [Abdessalam BENHARIRA](https://abdessalam-benharira.me)
