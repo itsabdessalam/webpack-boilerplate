@@ -33,13 +33,14 @@ cd my-webpack-starter && npm install
 npm run dev
 ```
 
-**Prod Server**
+**Prod Version**
 
 ```bash
 npm run prod
 ```
 
 3.  **Open browser and start editing files!**
+⋅⋅⋅Site is running at http://localhost:9000
 
 ## 🧐 What's inside?
 
@@ -49,10 +50,10 @@ npm run prod
 ├── src                 # This is the directory of entry point files related to the front-end of your site
 |   ├── index.js        # This is the entry point file for Webpack
 |   └── assets
-|        ├── fonts
-|        ├── images
-|        ├── javascripts
-|        └── stylesheets
+|       ├── fonts
+|       ├── images
+|       ├── javascripts
+|       └── stylesheets
 ├── .gitignore          # This file tells git which files it should not track
 ├── .prettierrc.json    # This is the configuration file for Prettier
 ├── .eslintrc.json      # This is the configuration file for ESLint
