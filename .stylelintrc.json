@@ -13,7 +13,6 @@
 		"selector-attribute-operator-space-before": "always",
 		"selector-attribute-operator-space-after": "always",
 		"selector-attribute-brackets-space-inside": "never",
-		"declaration-block-trailing-semicolon": "never",
 		"declaration-colon-space-before": "never",
 		"declaration-colon-space-after": "always",
 		"number-leading-zero": "never",
