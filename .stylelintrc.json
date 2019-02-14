@@ -2,7 +2,7 @@
 	"extends": "stylelint-config-standard",
 	"ignoreFiles": ["**/*.js", "**/*.html"],
 	"rules": {
-		"indentation": "tab",
+		"indentation": 4,
 		"string-quotes": "double",
 		"no-duplicate-selectors": true,
 		"color-hex-case": "lower",
