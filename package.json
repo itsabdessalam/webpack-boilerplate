@@ -4,7 +4,7 @@
     "description": "A webpack boilerplate",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
+        "test": "echo \"Error: no test specified\"",
         "dev": "webpack-dev-server --open --config ./build/webpack.dev.js --hot --inline",
         "prod": "webpack --config ./build/webpack.prod.js"
     },
