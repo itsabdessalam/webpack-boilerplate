@@ -1,0 +1,22 @@
+sudo: false
+dist: trusty
+language: node_js
+node_js:
+    - "10"
+    - "8"
+    - "6"
+
+cache: npm
+
+branches:
+    only:
+        - develop
+
+before_install:
+    - npm i -g npm@latest
+
+install:
+    - npm install
+
+script:
+    - npm run prod
