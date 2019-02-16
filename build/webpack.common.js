@@ -24,7 +24,9 @@ module.exports = {
 			},
 			{
 				test: /\.scss$/,
-				include: [path.resolve(__dirname, "src", "assets/stylesheets")],
+				include: [
+					path.resolve(__dirname, "../src", "assets/stylesheets")
+				],
 				use: [
 					{
 						loader: "style-loader",
