@@ -8,10 +8,6 @@ node_js:
 
 cache: npm
 
-branches:
-    only:
-        - develop
-
 before_install:
     - npm i -g npm@latest
 
