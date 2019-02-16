@@ -48,6 +48,14 @@ npm run prod
 ```
 .
 ├── node_modules        # This is the directory of the modules (npm packages) for your project
+├── config              # Config files
+|   ├── index.js
+|   ├── dev.js
+|   └── prod.js
+├── build               # Webpack configuration files
+|   ├── webpack.common.js
+|   ├── webpack.dev.js
+|   └── webpack.prod.js
 ├── src                 # This is the directory of entry point files related to the front-end of your site
 |   ├── index.js        # This is the entry point file for Webpack
 |   └── assets
@@ -62,10 +70,7 @@ npm run prod
 ├── index.html          # This is the file where Webpack serve content
 ├── package.json        # This file tells npm which packages to install for your project
 ├── README.md
-├── LICENSE
-├── webpack.common.js   # Webpack configuration files
-├── webpack.dev.js
-└── webpack.prod.js
+└── LICENSE
 ```
 
 ## ✨ Features
