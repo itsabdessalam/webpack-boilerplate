@@ -8,6 +8,11 @@ module.exports = {
 	entry: {
 		app: "./src/index.js"
 	},
+	output: {
+		filename: "[name].bundle.js",
+		path: path.resolve(__dirname, "../dist"),
+		publicPath: "http://localhost:9000/"
+	},
 	module: {
 		rules: [
 			{
@@ -24,7 +29,7 @@ module.exports = {
 				use: ["babel-loader", "eslint-loader"]
 			},
 			{
-				test: /\.scss$/,
+				test: /\.(scss|css)$/,
 				include: [path.resolve("./src", "assets/stylesheets")],
 				use: [
 					{
@@ -36,6 +41,7 @@ module.exports = {
 					{
 						loader: "css-loader",
 						options: {
+							modules: true,
 							sourceMap: true
 						}
 					},
@@ -78,10 +84,5 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: "./index.html"
 		})
-	],
-	output: {
-		filename: "[name].bundle.js",
-		path: path.resolve(__dirname, "./dist"),
-		publicPath: "http://localhost:9000/"
-	}
+	]
 };
