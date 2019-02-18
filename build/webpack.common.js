@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 const webpack = require("webpack");
 const path = require("path");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
@@ -24,9 +25,7 @@ module.exports = {
 			},
 			{
 				test: /\.scss$/,
-				include: [
-					path.resolve(__dirname, "../src", "assets/stylesheets")
-				],
+				include: [path.resolve("./src", "assets/stylesheets")],
 				use: [
 					{
 						loader: "style-loader",
@@ -82,7 +81,7 @@ module.exports = {
 	],
 	output: {
 		filename: "[name].bundle.js",
-		path: path.resolve(__dirname, "dist"),
+		path: path.resolve(__dirname, "./dist"),
 		publicPath: "http://localhost:9000/"
 	}
 };
