@@ -15,6 +15,6 @@ install:
 jobs:
     include:
         - stage: test
-          script: script/test
+          script: scripts/test
         - stage: test
-          script: script/build
+          script: scripts/build
