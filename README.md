@@ -67,6 +67,7 @@ npm run prod
 ├── .prettierrc.json    # This is the configuration file for Prettier
 ├── .eslintrc.json      # This is the configuration file for ESLint
 ├── .stylelintrc.json   # This is the configuration file for stylelint
+├── commitlint.config.js # This is the configuration file for commitlint
 ├── index.html          # This is the file where Webpack serve content
 ├── package.json        # This file tells npm which packages to install for your project
 ├── README.md
@@ -79,6 +80,7 @@ npm run prod
 -   Linting with ESLint and Stylelint
 -   Code formatting with Prettier
 -   Precommit with husky and lint-staged
+-   Commit conventions with commitlint
 
 ## 💩 When trying to commit bad code
 
